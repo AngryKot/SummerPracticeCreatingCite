@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Пиксельная игра - Название игры</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* CSS стили для макета сайта */
+        body {
+
+            font-family: 'Rotunda', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://cdn.discordapp.com/attachments/709339517118578839/1120760325185224855/888.png");
+            background-repeat: no-repeat;
+            background-color: DimGrey;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        header {
+            background-image: url("https://cdn.discordapp.com/attachments/709339517118578839/1120756402915381309/999999999.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo{
+            text-align:  center;
+
+        }
+        /* Стили для секции игр */
+        .characters {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Стили для блоков персонажей */
+        .Char1, .Char2 {
+            position: relative; /* Позиционирование для затемнения */
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            transition: opacity 0.3s ease-in-out; /* Плавное изменение прозрачности */
+        }
+        .Char1 h3, .Char2 h3, .Char1 p, .Char2 p, .logo h2, .banner, .about, .bottomfooter{
+            color: white; /* Устанавливаем цвет текста */
+            font-family: gothic-font;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Добавляем тень к тексту */
+        }
+        .banner{
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Добавляем тень к тексту */
+        }
+        .banner a{
+
+        }
+        .about{
+            font-size: 18px;
+        }
+        /* Стили для описания персонажей */
+        .gameChar1, .gameChar2 {
+            margin-bottom: 10px;
+        }
+
+        /* Стили для изображений персонажей */
+        .Char1 img, .Char2 img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Стили для изменения размера рамки */
+        .Char1:hover, .Char2:hover {
+            border-width: 6px;
+        }
+
+        /* Стили для затемнения блока */
+        .darken {
+            opacity: 0.7; /* Устанавливаем прозрачность блока */
+        }
+
+    </style>
+    <script>
+        function darken() {
+            const chars = document.querySelectorAll('.Char1, .Char2');
+            chars.forEach(char => {
+                char.addEventListener('mouseover', () => {
+                    chars.forEach(otherChar => {
+                        if (otherChar !== char) {
+                            otherChar.classList.add('darken');
+                        }
+                    });
+                });
+                char.addEventListener('mouseout', () => {
+                    chars.forEach(otherChar => {
+                        if (otherChar !== char) {
+                            otherChar.classList.remove('darken');
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+    <title>Ваш сайт</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Стили для подвала */
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: left;
+            background-image: url("https://cdn.discordapp.com/attachments/709339517118578839/1120756402915381309/999999999.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+<body onload="darken()">
+<!-- Код основного контента вашего сайта -->
+</body>
+<header>
+    <section class="banner">
+        <h1>Crow And Sparrow</h1>
+        <p></p>
+        <a href="#" class="play-button">Download</a>
+    </section>
+</header>
+
+
+<main>
+
+
+    <section class="about">
+        <h2>About</h2>
+        <p>Starving for new adventures</p>
+    </section>
+
+    <section class="logo">
+        <h2>Characters</h2>
+    </section>
+
+    <section class="characters">
+
+        <div class="Char1">
+            <div class="gameChar1">
+                <h3>Margaret</h3>
+                <p>Try to not lose your sanity in her space</p>
+
+            </div>
+            <a href="https://ru.pinterest.com/pin/980588518847539864/">
+                <img src="https://i.pinimg.com/564x/45/30/a4/4530a46b7b96de5f420b363bc7d34474.jpg" alt="Игра 1"></a>
+        </div>
+        <div class="Char2">
+            <div class="gameChar2">
+                <h3>Linda</h3>
+                <p>What's she's hiding behind her back?</p>
+
+            </div>
+            <a href="https://ru.pinterest.com/pin/980588518847549238/">
+            <img src="https://i.pinimg.com/564x/cf/14/38/cf14381cc751c095faf1e2767ef4d6fe.jpg" alt="Игра 2"></a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bottomfooter">
+    <section class="contact">
+        <h2>Contacts</h2>
+        <p>Contact us for more information:</p>
+        <ul>
+            <li>Email: <a href="mailto:segeda.nikita2016@yandex.ru">EmailOfForestGuard@example.com</a></li>
+            <li>Address: <a href="адрес">Forest.Max</a></li>
+        </ul>
+    </section>
+    <p>All rights reserved &copy; 2023</p>
+</footer>
+
+
+
+</body>
+</html>
