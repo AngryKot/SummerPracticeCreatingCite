@@ -20,11 +20,12 @@
         }
 
         header {
+            padding: 20px;
             background-image: url("https://cdn.discordapp.com/attachments/709339517118578839/1120756402915381309/999999999.png");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            padding: 20px;
+
             text-align: center;
         }
 
@@ -48,20 +49,22 @@
             border: 1px solid #ccc;
             transition: opacity 0.3s ease-in-out; /* Плавное изменение прозрачности */
         }
-        .Char1 h3, .Char2 h3, .Char1 p, .Char2 p, .logo h2, .banner, .about, .bottomfooter{
+        .Char1 h3, .Char2 h3, .Char1 p, .Char2 p, .logo h2, .banner h1, .about, .bottomfooter{
+
             color: white; /* Устанавливаем цвет текста */
             font-family: gothic-font;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Добавляем тень к тексту */
         }
-        .banner{
-            font-size: 20px;
+        .banner h1{
+
+            font-size: 30px;
             text-align: center;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Добавляем тень к тексту */
         }
-        .banner a{
 
-        }
         .about{
+            padding: 20px;
+            text-align: center;
             font-size: 18px;
         }
         /* Стили для описания персонажей */
@@ -87,6 +90,17 @@
             opacity: 0.7; /* Устанавливаем прозрачность блока */
         }
 
+        .banner a{
+            background-color: #696969;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 59px; /* Задаем радиус скругления */
+            font-family: gothic-font;
+        }
     </style>
     <script>
         function darken() {
@@ -129,13 +143,14 @@
 
 </head>
 <body>
-<body onload="darken()">
-<!-- Код основного контента вашего сайта -->
+<body onload="darken()"> <!-- Загрузка скрипта -->
+
 </body>
 <header>
     <section class="banner">
         <h1>Crow And Sparrow</h1>
         <p></p>
+
         <a href="#" class="play-button">Download</a>
     </section>
 </header>
@@ -146,7 +161,9 @@
 
     <section class="about">
         <h2>About</h2>
-        <p>Starving for new adventures</p>
+        <p>Unleash your courage in a gothic-thriller adventure. <br> Explore the shadows, unravel secrets, and face your darkest fears. Embark on an immersive journey into the unknown.
+            <br> Are you ready to discover the truth?</p>
+
     </section>
 
     <section class="logo">
@@ -161,7 +178,7 @@
                 <p>Try to not lose your sanity in her space</p>
 
             </div>
-            <a href="https://ru.pinterest.com/pin/980588518847539864/">
+            <a href="loreCrow.html">
                 <img src="https://i.pinimg.com/564x/45/30/a4/4530a46b7b96de5f420b363bc7d34474.jpg" alt="Игра 1"></a>
         </div>
         <div class="Char2">
@@ -170,7 +187,7 @@
                 <p>What's she's hiding behind her back?</p>
 
             </div>
-            <a href="https://ru.pinterest.com/pin/980588518847549238/">
+            <a href="loreSpar.html">
             <img src="https://i.pinimg.com/564x/cf/14/38/cf14381cc751c095faf1e2767ef4d6fe.jpg" alt="Игра 2"></a>
         </div>
     </section>
@@ -182,7 +199,7 @@
         <h2>Contacts</h2>
         <p>Contact us for more information:</p>
         <ul>
-            <li>Email: <a href="mailto:segeda.nikita2016@yandex.ru">EmailOfForestGuard@example.com</a></li>
+            <li>Email: <a  href="mailto:segeda.nikita2016@yandex.ru" >EmailOfForestGuard@example.com </a></li>
             <li>Address: <a href="адрес">Forest.Max</a></li>
         </ul>
     </section>
